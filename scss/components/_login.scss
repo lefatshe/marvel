@@ -1,0 +1,82 @@
+// loginPanel components
+#loginPanel{
+	.input-group{
+		margin-bottom:25px
+	}
+
+	div#loginbox {
+		margin-top: 50px;
+	}
+
+	#login-status {
+		margin: 10px;
+	}
+
+	.input-group-addon {
+		padding: 15px 12px;
+		font-size: 14px;
+		height: 50px;
+		width: 50px !important;
+		font-weight: 400;
+		line-height: 1;
+		color: #555;
+		text-align: center;
+		background-color: #eee;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+	.input-group-addon, .input-group-btn {
+		width: 1%;
+		white-space: nowrap;
+		vertical-align: middle;
+	}
+
+	.form-control{
+		height:51px;
+		padding: 6px 67px;
+		font-size: 22px;
+	}
+
+	.form-inputz {
+		// display: block;
+		// width: 100%;
+		height: 34px;
+		padding: 6px 12px;
+		font-size: 14px;
+		color: #555;
+		background-color: #fff !important;
+		background-image: none;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+		-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	}
+
+	input:-webkit-autofill {
+	    -webkit-box-shadow: 0 0 0px 1000px white inset;
+	}
+
+	span.input-group-addon {
+		position: absolute;
+		top: inherit;
+	}
+
+	.btn-lg {
+		background: #009999;
+		color: #FFF;
+		border-color: #009999;
+	}
+
+	.panel-heading {
+		text-align: center;
+		margin: 15% auto;
+		
+	}
+
+	.alert.alert-warning {
+		margin: 30px;
+	}
+}

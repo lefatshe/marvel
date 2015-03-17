@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Admin Index| Demo</title>
+
+  <meta name="description" content="Marvel">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" title="Stylesheet" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <script src="javascripts/vendor/jquery-1.11.1.js"></script>
+  <script src="javascripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> 
+</head>
+<body>
+
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+ <![endif]-->
+
+<header>
+  <!--/.top-bar-a -->
+  <div id="top-bar-a">
+  <nav class="navbar navbar-marvel navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo" href="#">Marvel Branding</a>
+        </div>
+   
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right user-tools">
+            <li class="dropdown pull-right">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <span class="admin-icon">    </span>
+                <span class="admin-number">  F <strong>0117890</strong> ..  </span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#"><i class="glyphicon glyphicon-lock"></i>    Action</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i>    User prefferance</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="glyphicon glyphicon-log-out"></i>   Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+  </nav>
+  </div><!--/.top-bar-a -->
+
+    <!--/.top-bar-b -->
+  <div id="top-bar-b">
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="marvel-promo-block">Hello, world!</h1>
+        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p> -->
+      </div>
+    </div>
+  </div><!--/.top-bar-b -->
+</header>
+
+<!-- Sections -->
+  <section>
+    <!-- main menu -->
+
+    <div id="Menu" class="container" wicket:id="menuPanel">
+      <ul class="control-menu row">
+
+        <!-- main menu child (1) -->
+        <li class="col-md-4">
+            <div class="btn-group dropdown-menu-right">
+              Workspace
+              <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <!-- Dropdown menu links -->
+                <li>Workspace item i</li>
+                <li>Workspace item ii</li>
+                <li>Workspace item iii</li>
+              </ul>
+            </div>
+        </li>
+
+        <!-- main menu child (2) -->
+        <li class="col-md-4">
+            <div class="btn-group dropdown-menu-right">
+              Management
+              <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <!-- Dropdown menu links -->
+                <li>Management item i</li>
+                <li>Management item ii</li>
+                <li>Management item iii</li>
+                <li>Management item iiii</li>
+                <li>Management item v</li>
+              </ul>
+            </div>
+        </li>
+
+        <!-- main menu child (3) -->
+        <li class="col-md-4">
+          <div class="btn-group dropdown-menu-right">
+            Administration
+          </div>
+        </li>
+      </ul>
+    </div><!-- END main menu -->
+
+    <!-- Content -->
+        <div id="Content page-content-wrapper" class="content" wicket:id="contentComponent">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-sm-9 col-md-9 col-lg-8">
+                    Page Content
+                  </div>
+                  <!-- Search -->
+                  <div class="col-sm-3 col-md-3 col-lg-4">
+                      <div id="search">
+                            <h4>Search</h4>
+                            <div class="right-inner-addon">
+                              <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-default" type="button">Go!</button>
+                                </span>
+
+                              </div>
+                          <div class="toggle-title">Advanced search<span class="arrow-down"></span></div>
+                          <div class="toggle-details">
+                            <label>ID details</label>
+                            <div class="input-group search-form">
+                              <span class="input-group-addon">
+                                <span class="caret"></span>
+                              </span>
+                                    <select class="selectpicker form-control">
+                                        <option>Passport</option>
+                                        <option>Id</option>
+                                        <option>FiP no</option>
+                                    </select>
+                            </div>
+                            <!-- <label>ID document number</label> -->
+                            <div class="input-group search-form">
+                              <span class="input-group-addon">
+                                <input aria-label="Checkbox for following text input" type="checkbox">
+                              </span>
+                              <input class="form-control" placeholder="ID document number" aria-label="Text input with checkbox" type="text">
+                            </div>
+                            <label>Names</label> 
+                            <div class="input-group search-form">
+                              <span class="input-group-addon">
+                                <input aria-label="Checkbox for following text input" type="checkbox">
+                              </span>
+                              <input class="form-control" placeholder="Surname" aria-label="Text input with checkbox" type="text">
+                            </div>
+                            <div class="input-group search-form">
+                              <span class="input-group-addon">
+                                <input aria-label="Checkbox for following text input" type="checkbox">
+                              </span>
+                              <input class="form-control" placeholder="First Name" aria-label="Text input with checkbox" type="text">
+                            </div>
+                            <label>Account Details</label> 
+                            <div class="input-group search-form">
+                              <span class="input-group-addon">
+                                <span class="caret"></span>
+                              </span>
+                                    <select class="selectpicker form-control">
+                                        <option>Account Type: 1</option>
+                                        <option>Account Type: 2</option>
+                                        <option>Account Type: 3</option>
+                                    </select>
+                            </div>
+                            <div class="input-group search-form">
+                              <span class="input-group-addon">
+                                <input aria-label="Checkbox for following text input" type="checkbox">
+                              </span>
+                              <input class="form-control" placeholder="Account Number" aria-label="Text input with checkbox" type="text">
+                            </div>
+                            <label>Other</label> 
+                            <div class="input-group search-form">
+                              <span class="input-group-addon">
+                                <span class="caret"></span>
+                              </span>
+                                    <select class="selectpicker form-control">
+                                        <option>Company : 1</option>
+                                        <option>Company Type: 2</option>
+                                        <option>Company Type: 3</option>
+                                    </select>
+                            </div>
+                            <div class="input-group search-form">
+                              <span class="input-group-addon">
+                                <input aria-label="Checkbox for following text input" type="checkbox">
+                              </span>
+                              <input class="form-control" placeholder="UCN" aria-label="Text input with checkbox" type="text">
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+        </div>
+    <!-- END Content -->
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div id="piedipagina" wicket:id="footerPanel">
+      
+    </div>
+  </footer>
+<!-- Javascript require functions -->
+ <script data-main="javascripts/main" src="javascripts/vendor/require.js"></script>
+</body>
+</html>

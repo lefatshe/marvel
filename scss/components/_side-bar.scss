@@ -1,0 +1,41 @@
+// side-bar
+#search {
+
+	
+	.search-form{
+		margin:15px 10px;
+	}
+}
+
+.toggle-title {
+	    display: block;
+	    margin: 10px 0px;
+	    color: rgb(204, 204, 204);
+	    border-bottom: 1px solid !important;
+	    padding: 15px;
+	}
+
+	.toggle-details {
+		label{
+    		padding-left: 11px;
+    		display: none;
+		}
+	}
+
+option {
+					clear: both;
+					color: $gray-light;
+					display: block;
+					border-right: none;
+					text-align: left;
+					padding: 10px;
+					border-bottom: 1px dashed $gray-light;
+					&:last-child {
+					  border-bottom: 0px solid $gray-light;
+					}
+					&:hover {
+					  background: darken($brand-marvel-contrast, 6.5%);
+					  cursor: pointer;
+					}
+				}
+

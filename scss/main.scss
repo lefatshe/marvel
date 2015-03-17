@@ -1,0 +1,41 @@
+// import sass framework
+   @import "compass";
+
+// import compass sprite images
+   @import "compass/reset";
+
+// import compass sprite images
+   @import "compass/utilities/sprites";
+
+// Include the dimensions of each sprite
+	$base-sprite-dimensions: true; 
+	@import "base/*.png";
+	@include all-base-sprites;
+
+//  Google fonts import
+    //@import url(http://fonts.googleapis.com/css?family=Orbitron);
+
+
+// ***************************************************
+// Bootstrap Partials Preprocessor
+// ***************************************************
+
+
+// Bootstrap framework 
+   @import "module/bootstrap-compass";
+   @import "module/bootstrap-mincer";
+   @import "module/bootstrap-sprockets";
+   @import "module/bootstrap";
+
+// Master theme colors
+   @import "theme/marvel-plain";
+
+// Base assets
+   @import "base/layout";
+   @import "base/top-nav-bar";
+   @import "base/background-images";
+   
+   
+// Site Components
+   @import "components/login";
+   @import "components/side-bar";

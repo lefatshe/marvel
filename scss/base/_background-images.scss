@@ -1,0 +1,28 @@
+// SVG Used as a Background Image, 
+// PNG Fallback with Modernizr
+
+
+// Declare no-repeat on svg images
+.logo,
+.admin-icon{
+	background-repeat: no-repeat;
+}
+
+// Site logo
+.logo { background-image: url('../images/svg/marvel-rocket.svg');}
+.no-svg .logo { background-image: url('../images/marvel-logo.gif'); background-size:100px}
+
+
+// user icon
+.admin-icon { background-image: url('../images/svg/user.svg');}
+.no-svg .admin-icon { background-image: url('../images/marvel-logo.png');}
+
+// promo-block
+.marvel-promo-block { background-image: url('../images/svg/First_National_Bank.svg');}
+.no-svg .marvel-promo-block { background-image: url('../images/svg/First_National_Bank.png');}
+
+// menu-icon
+//.dropdown-toggle {background-image: url('../images/svg/menu-control-icon.svg');}
+
+// dropdown-toggle
+.toggle-title span.arrow-down{ background-image: url('../images/svg/arrow-down.svg');}

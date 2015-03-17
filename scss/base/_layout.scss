@@ -1,0 +1,59 @@
+#top-bar-a,
+#top-bar-b ,
+#top-bar-b {
+	display:block;
+	clear:both;
+	overflow:hidden;
+}
+
+
+.jumbotron {
+	background: url(../images/promo/marvel-dark-header-img2x.jpg);
+	background-position: center;
+	padding-top: 18px;
+}
+
+.marvel-promo-block {
+	font-size: 63px;
+	text-indent: -999999px;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
+h4{color:$brand-marvel}
+
+.content {
+	background: $brand-marvel-content-bg;
+	padding:20px 0px;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#Menu {
+		padding:0px !important;
+		li .btn-group{ border:none; border-bottom:1px solid #CCC; width:100%; padding: 20px;}
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (max-width: 979px) { 
+	#Menu {
+		padding:0px !important;
+		li .btn-group{ border:none; border-bottom:1px solid #CCC; width:100%; padding: 20px;}
+	}
+
+	#Menu .control-menu li {
+	border-right: 0px solid #CCC !important;
+	padding-left: 0px !important;
+	}
+}
+
+
+.arrow-down {
+    width: 8px;
+    height: 19px;
+    display: block;
+    float: right;
+    background-repeat: no-repeat;
+}
+
