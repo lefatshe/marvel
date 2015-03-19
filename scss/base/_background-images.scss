@@ -21,8 +21,18 @@
 .marvel-promo-block { background-image: url('../images/svg/First_National_Bank.svg');}
 .no-svg .marvel-promo-block { background-image: url('../images/svg/First_National_Bank.png');}
 
-// menu-icon
-//.dropdown-toggle {background-image: url('../images/svg/menu-control-icon.svg');}
-
 // dropdown-toggle
 .toggle-title span.arrow-down{ background-image: url('../images/svg/arrow-down.svg');}
+.no-svg .toggle-title span.arrow-down{ background-image: url('../images/arrow-down.png');}	
+
+// Title dropdown-toggle
+.sidebar-title { background-image: url('../images/svg/arrow-down-green.svg');}
+.no-svg .sidebar-title{ background-image: url('../images/arrow-down-green.png');}	
+
+// User tools 
+.btn-get-work { background-image: url('../images/svg/getwork.svg');}
+.capture { background-image: url('../images/svg/capture.svg');}
+.refresh { background-image: url('../images/svg/refresh.svg');}
+
+// indexing
+// .case-img{ background-image: url('../images/svg/case-folder.svg');}

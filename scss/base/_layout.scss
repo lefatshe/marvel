@@ -1,3 +1,7 @@
+@-ms-viewport{
+  width: device-width;
+}
+
 #top-bar-a,
 #top-bar-b ,
 #top-bar-b {
@@ -6,11 +10,28 @@
 	overflow:hidden;
 }
 
+.sticky {
+    position:fixed;
+    top:0;
+}
+
+.menu {
+    display: block;
+    width: 100%;
+    z-index: 10;
+    background:#FFF;
+    top:38px;
+
+    -webkit-box-shadow: 0 8px 6px -6px $gray-light;
+	   -moz-box-shadow: 0 8px 6px -6px $gray-light;
+	        box-shadow: 0 8px 6px -6px $gray-light;
+}
 
 .jumbotron {
 	background: url(../images/promo/marvel-dark-header-img2x.jpg);
 	background-position: center;
 	padding-top: 18px;
+	@include opacity(1);
 }
 
 .marvel-promo-block {
@@ -25,35 +46,51 @@ h4{color:$brand-marvel}
 .content {
 	background: $brand-marvel-content-bg;
 	padding:20px 0px;
+	min-height: 550px;
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	#Menu {
-		padding:0px !important;
-		li .btn-group{ border:none; border-bottom:1px solid #CCC; width:100%; padding: 20px;}
+		li{padding:15px 0px !important}
 	}
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 979px) { 
 	#Menu {
-		padding:0px !important;
-		li .btn-group{ border:none; border-bottom:1px solid #CCC; width:100%; padding: 20px;}
+	
+		li .btn-group{ border:none; }
 	}
 
-	#Menu .control-menu li {
-	border-right: 0px solid #CCC !important;
-	padding-left: 0px !important;
-	}
+	
 }
 
 
-.arrow-down {
-    width: 8px;
-    height: 19px;
+.arrow-down, .sidebar-title {
+    width: 20px;
+    height: 10px;
     display: block;
     float: right;
     background-repeat: no-repeat;
+}
+
+
+
+.toggle-title{
+	cursor:pointer;
+	&:hover{
+		color:$gray;
+	}
+}
+
+.marvel{
+	background:$brand-marvel;
+	color:white;
+	border-color:$brand-marvel;
+}
+
+.content-block{
+	margin:10px 0px;
 }
 

@@ -18,6 +18,25 @@
 
   <script src="javascripts/vendor/jquery-1.11.1.js"></script>
   <script src="javascripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> 
+
+  <!-- favicon support for all devices -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
@@ -40,19 +59,47 @@
         </div>
    
         <div id="navbar" class="navbar-collapse collapse">
+          
           <ul class="nav navbar-nav navbar-right user-tools">
+
+            <!-- User tool | get work -->
+            <li class="dropdown pull-left">
+              <a href="#" role="button" aria-expanded="false">
+                <i class="glyphicon glyphicon-import"></i>
+                <span class="admin-number">Get Work</span>
+              </a>
+            </li>
+
+            <!-- User tool | View work -->
+            <li class="dropdown pull-left">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <i class="glyphicon glyphicon-open-file"></i>
+                <span class="admin-number">Queue</span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="inqueue">
+                  <strong>(3) Documents</strong>
+                  <p class="divider"></p>
+                  <p>Email body</p> 
+                  <p>Other</p>
+                  <p>Other</p>
+                </li>
+              </ul>
+            </li> 
+            <!-- User tool | logged in user -->
             <li class="dropdown pull-right">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                <span class="admin-icon">    </span>
+                <i class="glyphicon glyphicon-user"></i>
                 <span class="admin-number">  F <strong>0117890</strong> ..  </span>
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#"><i class="glyphicon glyphicon-lock"></i>    Action</a></li>
-                <li><a href="#"><i class="glyphicon glyphicon-user"></i>    User prefferance</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i>    User preferences</a></li>
                 <li class="divider"></li>
                 <li><a href="#"><i class="glyphicon glyphicon-log-out"></i>   Logout</a></li>
               </ul>
             </li>
+
           </ul>
         </div><!--/.nav-collapse -->
   </nav>
@@ -72,19 +119,19 @@
 <!-- Sections -->
   <section>
     <!-- main menu -->
-
+    <div class="menu">
     <div id="Menu" class="container" wicket:id="menuPanel">
       <ul class="control-menu row">
 
         <!-- main menu child (1) -->
-        <li class="col-md-4">
+        <li class="col-md-3 col-sm-3 col-xs-4">
             <div class="btn-group dropdown-menu-right">
               Workspace
               <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                 <span class="caret"></span>
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
-              <ul class="dropdown-menu" role="menu">
+              <ul class="dropdown-menu pull-right" role="menu">
                 <!-- Dropdown menu links -->
                 <li>Workspace item i</li>
                 <li>Workspace item ii</li>
@@ -94,14 +141,14 @@
         </li>
 
         <!-- main menu child (2) -->
-        <li class="col-md-4">
+        <li class="col-md-3 col-sm-3 col-xs-4">
             <div class="btn-group dropdown-menu-right">
               Management
               <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                 <span class="caret"></span>
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
-              <ul class="dropdown-menu" role="menu">
+              <ul class="dropdown-menu pull-right" role="menu">
                 <!-- Dropdown menu links -->
                 <li>Management item i</li>
                 <li>Management item ii</li>
@@ -113,23 +160,99 @@
         </li>
 
         <!-- main menu child (3) -->
-        <li class="col-md-4">
+        <li class="col-md-3 col-sm-3 col-xs-4">
           <div class="btn-group dropdown-menu-right">
             Administration
           </div>
         </li>
       </ul>
-    </div><!-- END main menu -->
+    </div></div><!-- END main menu -->
 
     <!-- Content -->
         <div id="Content page-content-wrapper" class="content" wicket:id="contentComponent">
           <div class="container-fluid">
               <div class="row">
-                  <div class="col-sm-9 col-md-9 col-lg-8">
-                    Page Content
+                 <!-- 
+                      Page content 
+                  -->
+                  <div id="page-content" class="col-sm-8 col-md-9 col-lg-8">
+                      
+                      <!-- index-cases -->
+                      <div id="index-cases" class="content-block">
+                          <h3>Indexing cases</h3>
+                          <div class="row case-row">
+                            <!-- case block -->
+                            <div class="col-md-3 col-sm-6">
+                              <div class="case status-inprogress">
+                                  <div class="case-id toggle-title">
+                                    <img src="images/svg/case-folder.svg" alt="" style="width: 45%; height: auto;">
+                                    <p>Case ID : 85058  <span class="caret"></span></p>
+                                  </div>
+                                  <ul class="toggle-details">
+                                    <li><strong>Miss Elzete Zaayan</strong></li>
+                                    <li>13 March 2015 | 5:45 PM</li>
+                                    <li>South Africa</li>
+                                    <li>2</li>
+                                    <li class="inprogress">InProgress</li>
+                                  </ul>
+                              </div>
+                            </div>
+                          <!-- case block -->
+                            <div class="col-md-3 col-sm-6">
+                              <div class="case status-inprogress">
+                                  <div class="case-id toggle-title">
+                                    <img src="images/svg/case-folder.svg" alt="" style="width: 45%; height: auto;">
+                                    <p>Case ID : 54058  <span class="caret"></span></p>
+                                  </div>
+                                  <ul class="toggle-details">
+                                    <li><strong>Miss Ann Klerk</strong></li>
+                                    <li>12 March 2015 | 2:45 PM</li>
+                                    <li>South Africa</li>
+                                    <li>6</li>
+                                    <li class="inprogress">InProgress</li>
+                                  </ul>
+                              </div>
+                            </div>
+                            <!-- case block -->
+                            <div class="col-md-3 col-sm-6">
+                              <div class="case status-ready">
+                                  <div class="case-id toggle-title">
+                                    <img src="images/svg/case-folder.svg" alt="" style="width: 45%; height: auto;">
+                                    <p>Case ID : 12958  <span class="caret"></span></p>
+                                  </div>
+                                  <ul class="toggle-details">
+                                    <li><strong>Miss Khumalo Radebe</strong></li>
+                                    <li>12 March 2015 | 5:45 PM</li>
+                                    <li>South Africa</li>
+                                    <li>2</li>
+                                    <li class="ready">ready</li>
+                                  </ul>
+                              </div>
+                            </div>
+                          <!-- case block -->
+                            <div class="col-md-3 col-sm-6">
+                              <div class="case status-hold">
+                                  <div class="case-id toggle-title">
+                                    <img src="images/svg/case-folder.svg" alt="" style="width: 45%; height: auto;">
+                                    <p>Case ID : 85058  <span class="caret"></span></p>
+                                  </div>
+                                  <ul class="toggle-details">
+                                    <li><strong>Miss Elzete Zaayan</strong></li>
+                                    <li>13 March 2015 | 5:45 PM</li>
+                                    <li>South Africa</li>
+                                    <li>2</li>
+                                    <li class="hold">InProgress</li>
+                                  </ul>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                   </div>
-                  <!-- Search -->
-                  <div class="col-sm-3 col-md-3 col-lg-4">
+                  <!-- 
+                      Sidebar 
+                  -->
+                  <div id="sidebar-panel" class="col-sm-4 col-md-3 col-lg-4">
+                     <!-- search -->
                       <div id="search">
                             <h4>Search</h4>
                             <div class="right-inner-addon">
@@ -138,8 +261,8 @@
                                 <span class="input-group-btn">
                                   <button class="btn btn-default" type="button">Go!</button>
                                 </span>
-
                               </div>
+                          <!-- Advanced Search -->
                           <div class="toggle-title">Advanced search<span class="arrow-down"></span></div>
                           <div class="toggle-details">
                             <label>ID details</label>
@@ -197,8 +320,8 @@
                               </span>
                                     <select class="selectpicker form-control">
                                         <option>Company : 1</option>
-                                        <option>Company Type: 2</option>
-                                        <option>Company Type: 3</option>
+                                        <option>Company : 2</option>
+                                        <option>Company : 3</option>
                                     </select>
                             </div>
                             <div class="input-group search-form">
@@ -207,7 +330,28 @@
                               </span>
                               <input class="form-control" placeholder="UCN" aria-label="Text input with checkbox" type="text">
                             </div>
+                            <!-- User Submit-->
+                            <div class="input-group search-form">
+                                <input class="btn btn-default btn-lg marvel" type="submit" name="Login" value="submit"/>
+                            </div>
                           </div>
+                      </div>
+                      <!-- roles -->
+                      <div id="roles" class="sidebar-next">
+                          <h4 class="toggle-title head">Roles<span class="sidebar-title"></span></h4>
+                          <ul class="toggle-details">
+                            <li>Customer Details</li>
+                            <li>Account Services</li>
+                            <li>CVM Indexing</li>
+                            <li>ADMIN Indexing</li>
+                            <li>CVM Validation</li>
+                            <li>CVM OutboundContact</li>
+                            <li>NEWAPP Validation</li>
+                            <li>NEWAPP OutboundContact</li>
+                            <li>Estate Indexing</li>
+                            <li>ADMIN CORP Indexing</li>
+                            <li>ADMIN SARB Indexing</li>
+                          </ul>
                       </div>
                   </div>
 

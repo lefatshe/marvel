@@ -7,18 +7,11 @@
 	}
 }
 
-.toggle-title {
-	    display: block;
-	    margin: 10px 0px;
-	    color: rgb(204, 204, 204);
-	    border-bottom: 1px solid !important;
-	    padding: 15px;
-	}
+
 
 	.toggle-details {
 		label{
     		padding-left: 11px;
-    		display: none;
 		}
 	}
 
@@ -39,3 +32,51 @@ option {
 					}
 				}
 
+
+.advanced-search, {
+    width: 20px;
+    height: 10px;
+    display: block;
+    float: right;
+    background-repeat: no-repeat;
+}
+
+.toggle-title {
+	    display: block;
+	    margin: 10px 0px;
+	    color: rgb(204, 204, 204);
+	    border-bottom: 1px solid !important;
+	    padding: 15px;
+	}
+
+.sidebar-underline{
+	border-bottom: 1px solid !important;
+	padding-bottom: 15px;
+}
+
+#sidebar-panel {
+	.toggle-details {
+		border: 1px solid #CCC;
+		padding: 10px;
+		@include border-radius(4px, 4px);
+	}
+	h4.toggle-title.head {
+		padding-left: 0px;
+		margin-top: 40px;
+		color: #009899;
+	}
+	ul.toggle-details li {
+		cursor: pointer;
+		border-bottom: 1px solid;
+		color: $gray-light;
+		padding: 10px;
+		&:last-child{
+			border-bottom: 0px solid;
+		}
+		&:hover {
+			background:$brand-marvel;
+			color:white;
+			@include border-radius(4px, 4px);
+		}
+	}
+}

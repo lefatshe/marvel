@@ -1,0 +1,31 @@
+
+ul#user-tools {
+	height: 132px;
+	border-bottom: 1px solid #CCC;
+	
+	li {
+		text-align: center;
+		width: 125px;
+		float: left;
+		border-right: 1px solid #CCC;
+		margin: 10px 0px;
+		height: 104px;
+	}
+		.btn-get-work,
+		.capture,
+		.refresh {
+			background-repeat: no-repeat;
+			font-size: 6em;
+			text-align: center;
+				span {
+					font-size: 16px;
+					color:$gray-light;
+					text-decoration: none;
+				}
+			&:hover{
+				text-decoration: none;
+				//background-color:white;
+				@include opacity(0.5);
+			}
+		}
+}
